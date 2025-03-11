@@ -13,8 +13,12 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
         <Link href="/">
-          <a className="mr-8 flex items-center space-x-2 font-bold text-xl">
-            Alit d.o.o.
+          <a className="mr-8 flex items-center space-x-2">
+            <img 
+              src="/WhatsApp_Image_2025-03-06_at_17.01.57__1_-removebg-preview.png" 
+              alt="Alit Logo" 
+              className="h-8"
+            />
           </a>
         </Link>
         <div className="flex gap-6">

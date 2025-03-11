@@ -18,21 +18,35 @@ export class MemStorage implements IStorage {
     this.currentProductId = 1;
     this.currentMessageId = 1;
 
-    // Seed initial products
+    // Seed initial products with real images
     const sampleProducts: InsertProduct[] = [
       {
-        name: "Premium ALU Window",
-        description: "High-quality aluminum window with thermal break",
+        name: "Premium ALU Prozor",
+        description: "Visokokvalitetni aluminijski prozor s termo prekidom",
         type: "ALU",
-        features: ["Thermal insulation", "Sound reduction", "Security features"],
-        imageUrl: "https://images.unsplash.com/photo-1532186773960-85649e5cb70b"
+        features: ["Termo izolacija", "Zvučna izolacija", "Sigurnosne značajke"],
+        imageUrl: "/WhatsApp Image 2025-03-06 at 17.01.56 (1).jpeg"
       },
       {
-        name: "Classic PVC Door",
-        description: "Energy-efficient PVC entrance door",
+        name: "ALU Klizna Vrata",
+        description: "Moderna klizna vrata s elegantnim dizajnom",
+        type: "ALU",
+        features: ["Glatko klizanje", "Moderan dizajn", "Sigurnosno staklo"],
+        imageUrl: "/WhatsApp Image 2025-03-06 at 17.01.56 (2).jpeg"
+      },
+      {
+        name: "PVC Ulazna Vrata",
+        description: "Energetski učinkovita PVC ulazna vrata",
         type: "PVC",
-        features: ["Energy efficient", "Low maintenance", "Weather resistant"],
-        imageUrl: "https://images.unsplash.com/photo-1601272238032-2da9c97188bc"
+        features: ["Energetska učinkovitost", "Nisko održavanje", "Otpornost na vremenske uvjete"],
+        imageUrl: "/WhatsApp Image 2025-03-06 at 17.01.57 (2).jpeg"
+      },
+      {
+        name: "PVC Prozor",
+        description: "Klasični PVC prozor za stambene prostore",
+        type: "PVC",
+        features: ["Izolacija", "Jednostavno održavanje", "Povoljna cijena"],
+        imageUrl: "/WhatsApp Image 2025-03-06 at 17.01.58 (1).jpeg"
       }
     ];
 
